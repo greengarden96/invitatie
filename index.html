@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+
+    
 </head>
 <body>
     <div class="container">
@@ -13,7 +15,136 @@
         <p>Smooth hover effect achieved by using variable fonts.</p>
         <p>Write your own words to try it out.</p>
       </div>
+      <style>
+        * {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background:#DB777E
+}
+
+/* Style the header */
+.header {
+  height: 50vw;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.elementToFadeInAndOut {
+    -webkit-animation: fadeout 7s linear forwards;
+    animation: fadeout 4s linear forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeout {
+from { opacity: 1; }
+to { opacity: 0; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Cedarville Cursive', serif;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: #af1c1c;
+    outline: none;
+    text-align: center;
+
+    text-align: center;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+  
+  h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+  
+  p {
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 1.2em;
+    line-height: 150%;
+    text-align: center;
+    color: MintCream;
+    letter-spacing: .5px;
+  }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    
+    @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+      </style>
     <div class="row">
         <div class="column">
 
