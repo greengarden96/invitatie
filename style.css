@@ -60,6 +60,11 @@ body {
     -webkit-animation: fadeout 7s linear forwards;
     animation: fadeout 4s linear forwards;
     opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }
 
 @-webkit-keyframes fadeout {
@@ -83,7 +88,7 @@ to { opacity: 0; }
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 20vh;
     text-transform: uppercase;
     font-family: 'Cedarville Cursive', serif;
     font-variation-settings: "wght" 311;
