@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/6808ac57-0673-46fa-a8c1-c840c824afaf/bfm5MP0xD8.json" background="#DB777E" class=elementToFadeInAndOut speed="1" style=" width: 800px; height: 800px; position: absolute" direction="1" mode="normal" autoplay></lottie-player>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/6808ac57-0673-46fa-a8c1-c840c824afaf/bfm5MP0xD8.json" background="transparent" class=elementToFadeInAndOut speed="1" style=" width: 800px; height: 800px; position: absolute" direction="1" mode="normal" autoplay></lottie-player>
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 
@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="invite-text">
         <h1 contenteditable>Maria Nastasescu si Adrian Ileana</h1>
         <p id="p1">Va invitam sa luati parte la cununia religioasa</p>
         <p id="p2">care va fi celebrata la Biserica <b style='color:#af1c1c !important;'>Nume biserica</b></p>
@@ -20,6 +21,7 @@
         <p id="p4">Sarbatorirea evenimentului va avea loc la restaurantul <b style='color:#af1c1c !important;'>Luna Cafe & Bistro</b>, ora <b style='color:#af1c1c !important;'>ora</b></p>
         <p id="p5">Alaturi de noi vor fi nasii:</p>
         <h2>Cristina si Marian Popescu</h2>
+    </div>
       </div>
       <style>
         * {
@@ -64,6 +66,15 @@ body {
   float: left;
   width: 33.33%;
   padding: 15px;
+}
+
+.invite-text{
+    border: 5px dotted #e9d3d3;; /* Dotted border */
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  padding: 50;
+  padding-top: 100;
+  padding-bottom:100;
 }
 
 /* Clear floats after the columns */
@@ -132,6 +143,7 @@ to { opacity: 0; }
   p {
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
+    text-transform: uppercase;
     opacity: 0;
     font-family: 'Inconsolata', monospace;
     font-size: 2vh;
@@ -141,6 +153,7 @@ to { opacity: 0; }
     margin-top: 0 ;
     margin-bottom: 0 ;
   }
+
   #p1 {
     animation-delay: 3s;
   }
@@ -185,10 +198,6 @@ to { opacity: 0; }
         to { opacity: 1; }
     }
       </style>
-    <div class="row">
-        <div class="column">
-
-        </div>
-    </div>
+    
 </body>
 </html>
