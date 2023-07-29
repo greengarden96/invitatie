@@ -1,6 +1,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/6808ac57-0673-46fa-a8c1-c840c824afaf/bfm5MP0xD8.json" background="#DB777E" class=elementToFadeInAndOut speed="1" style=" width: 800px; height: 800px; position: absolute" direction="1" mode="normal" autoplay></lottie-player>
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
@@ -10,9 +13,13 @@
 </head>
 <body>
     <div class="container">
-        <h1 contenteditable>11 Noiembrie</h1>
-        <p>Smooth hover effect achieved by using variable fonts.</p>
-        <p>Write your own words to try it out.</p>
+        <h1 contenteditable>Maria Nastasescu si Adrian Ileana</h1>
+        <p id="p1">Va invitam sa luati parte la cununia religioasa</p>
+        <p id="p2">care va fi celebrata la Biserica <b style='color:#af1c1c !important;'>Nume biserica</b></p>
+        <p id="p3">din Bucuresti, in ziua de <b style='color:#af1c1c !important;'>data</b> ora <b style='color:#af1c1c !important;'>ora</b></p>
+        <p id="p4">Sarbatorirea evenimentului va avea loc la restaurantul <b style='color:#af1c1c !important;'>Luna Cafe & Bistro</b>, ora <b style='color:#af1c1c !important;'>ora</b></p>
+        <p id="p5">Alaturi de noi vor fi nasii:</p>
+        <h2>Cristina si Marian Popescu</h2>
       </div>
       <style>
         * {
@@ -105,15 +112,11 @@ to { opacity: 0; }
   }
 
   h1 {
-    font-size: 5vh;
-    text-transform: uppercase;
-    font-family: 'Cedarville Cursive', serif;
-    font-variation-settings: "wght" 311;
+    font-size: 3.5vh;
+    font-family:  'Cedarville Cursive', serif;
     margin-bottom: 0.8rem;
     color: #af1c1c;
     outline: none;
-    text-align: center;
-
     text-align: center;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
@@ -129,14 +132,47 @@ to { opacity: 0; }
   p {
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
-    animation-delay: 3s;
     opacity: 0;
-    font-family: 'Cedarville Cursive', serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 2vh;
-    line-height: 150%;
     text-align: center;
-    color: MintCream;
-    letter-spacing: .5px;
+    color: #e9d3d3;
+    line-height: 2;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+  }
+  #p1 {
+    animation-delay: 3s;
+  }
+  #p2 {
+    animation-delay: 3.5s;
+  }
+  #p3 {
+    animation-delay: 4s;
+  }
+  #p4 {
+    animation-delay: 4.5s;
+  }
+  #p5 {
+    animation-delay: 5s;
+  }
+
+  h2 {
+    font-size: 3vh;
+    font-family:  'Cedarville Cursive', serif;
+    color: #af1c1c;
+    outline: none;
+    text-align: center;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    animation-delay: 6s;
+    opacity: 0;
+    line-height: 1;
+  }
+
+  h2:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
   }
 
 @-webkit-keyframes fadein {
