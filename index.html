@@ -15,11 +15,16 @@
     <div class="container">
         <div class="invite-text">
         <h1 contenteditable>Maria Nastasescu si Adrian Ileana</h1>
-        <p id="p1">Va invitam sa luati parte la cununia religioasa</p>
+        <p id="p1">Va invita sa luati parte la cununia religioasa</p>
         <p id="p2">care va fi celebrata la Biserica <b style='color:#af1c1c !important;'><a href ='https://goo.gl/maps/1Rha5ASCd6Z1Pjsk9'>Slobozia</a></b></p>
         <p id="p3">din Bucuresti, in ziua de <b style='color:#af1c1c !important;'>11.11.2023</b> ora <b style='color:#af1c1c !important;'>14:00</b></p>
-        <p id="p4">Sarbatorirea evenimentului va avea loc la restaurantul <b style='color:#af1c1c !important;'><a href='https://goo.gl/maps/czZ8oRoPKSgg9PDG6'>Luna Cafe & Bistro</a></b>, ora <b style='color:#af1c1c !important;'>19:00</b></p>
-        <p id="p5">Alaturi de noi vor fi nasii:</p>
+        <p id="p4">impreuna cu parintii</p>
+        <div style="display: flex; justify-content: space-between;">
+          <p id="side">Manuela si Dumitru Ileana</p>
+          <p id="side">Nely si Dan Nastasescu</p>
+        </div>
+        <p id="p5">Sarbatorirea evenimentului va avea loc la restaurantul <b style='color:#af1c1c !important;'><a href='https://goo.gl/maps/czZ8oRoPKSgg9PDG6'>Luna Cafe & Bistro</a></b>, ora <b style='color:#af1c1c !important;'>19:00</b></p>
+        <p id="p6">Alaturi de noi vor fi nasii:</p>
         <h2>Cristina si Marian Popescu</h2>
     </div>
       </div>
@@ -30,7 +35,7 @@
 
 body {
   margin: 0;
-  background:#DB777E
+  background:#DC766C
 }
 
 a {
@@ -57,6 +62,7 @@ a {
   display: block;
   color: #f2f2f2;
   text-align: center;
+
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -188,7 +194,10 @@ to { opacity: 0; }
     animation-delay: 4.5s;
   }
   #p5 {
-    animation-delay: 5s;
+    animation-delay: 5.5s;
+  }
+  #p6 {
+    animation-delay: 6s;
   }
 
   h2 {
@@ -199,7 +208,7 @@ to { opacity: 0; }
     text-align: center;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
-    animation-delay: 6s;
+    animation-delay: 6.5s;
     opacity: 0;
     line-height: 1;
   }
@@ -207,6 +216,20 @@ to { opacity: 0; }
   h2:hover {
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
+  }
+
+  #side {
+    font-size: 3vh;
+    flex-basis: 49.5%;
+    font-family:  'Cedarville Cursive', serif;
+    color: #af1c1c;
+    outline: none;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    animation-delay: 5s;
+    opacity: 0;
+    line-height: 2;
+    text-transform: none;
   }
 
 @-webkit-keyframes fadein {
