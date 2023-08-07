@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/6808ac57-0673-46fa-a8c1-c840c824afaf/bfm5MP0xD8.json" background="transparent" class=elementToFadeInAndOut speed="1" style=" max-width: 800px; max-height: 800px; height: auto; position: absolute" direction="1" mode="normal" autoplay></lottie-player>
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Eveniment</title>
   </svg>
@@ -13,78 +12,62 @@
 </head>
 <body>
     <div class="container">
-        <div class="invite-text">
-        <h1 contenteditable>Maria Nastasescu si Adrian Ileana</h1>
-        <p id="p1">Va invita sa luati parte la cununia religioasa</p>
-        <p id="p2">care va fi celebrata la Biserica <b style='color:#af1c1c !important;'><a href ='https://goo.gl/maps/1Rha5ASCd6Z1Pjsk9'>Slobozia</a></b></p>
-        <p id="p3">din Bucuresti, in ziua de <b style='color:#af1c1c !important;'>11 Noiembrie 2023</b> ora <b style='color:#af1c1c !important;'>14:00</b></p>
-        <p id="p4">impreuna cu parintii</p>
-        <div style="display: flex; justify-content: space-between;">
-          <p id="side">Manuela si Dumitru<br>Ileana</p>
-          <p id="side">Nely si Dan<br>Nastasescu</p>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/d31ef5b3-7062-4aa1-b8c0-653391e13193/TImhi8x3fZ.json" background=transparent speed="0.5" style="max-width: 800px; max-height: 800px; position: absolute" autoplay direction=“1” mode=“normal”></lottie-player>
+          <h1>Maria Nastasescu <br> si <br> Adrian Ileana</h1>
         </div>
-        <p id="p5">Sarbatorirea evenimentului va avea loc la restaurantul <b style='color:#af1c1c !important;'><a href='https://goo.gl/maps/czZ8oRoPKSgg9PDG6'>Luna Cafe & Bistro</a></b>, ora <b style='color:#af1c1c !important;'>19:00</b></p>
-        <p id="p6">Alaturi de noi vor fi nasii</p>
-        <h2>Cristina si Marian Popescu</h2>
+          <div class="invite-text">
+          <p id="p1">Va invitam sa luati parte la cununia religioasa</p>
+          <p id="p2">care va fi celebrata la Biserica <b style='color:#e46a52 !important;'><a href ='https://goo.gl/maps/1Rha5ASCd6Z1Pjsk9'>Slobozia</a></b></p>
+          <p id="p3">din Bucuresti, in ziua de <b style='color:#e46a52 !important;'>11 Noiembrie 2023</b> ora <b style='color:#e46a52 !important;'>14:00</b></p>
+          <p id="p4">impreuna cu parintii</p>
+          <div style="display: flex; justify-content: space-between;">
+            <p id="side">Manuela si Dumitru<br>Ileana</p>
+            <p id="side">Nely si Dan<br>Nastasescu</p>
+          </div>
+          <p id="p5">Sarbatorirea evenimentului va avea loc la restaurantul <b style='color:#e46a52 !important;'><a href='https://goo.gl/maps/czZ8oRoPKSgg9PDG6'>Luna Cafe & Bistro</a></b>, ora <b style='color:#e46a52 !important;'>19:00</b></p>
+          <p id="p6">Alaturi de noi vor fi nasii</p>
+          <h2>Cristina si Marian Popescu</h2>  
     </div>
-      </div>
+    <script>
+      function scrollWin() {
+        window.scrollTo(0, 1000);
+      }
+      window.onload=setTimeout(scrollWin,2000);
+      </script>
       <style>
         * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background:#DC766C
+  background:#f8f6f1
 }
 
 a {
     font-family: 'Inconsolata', monospace;
     font-size: 2vh;
-    color: #af1c1c;
+    color: #e46a52;
 }
 a:hover{
-  color: #c74b4b;
+  color: #EF8670;
 }
 
 .invite-text{
-  padding: 50;
-  padding-left:30;
-  padding-right:30;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
   border-radius: 15px; /* Rounded border */
   margin: 0 auto; /* Center the coupon */
-  border: 5px dotted #e9d3d3; /* Dotted border */
-  border-radius: 15px; /* Rounded border */
-  border:hidden;
-  -webkit-animation: border-fun 0.5s forwards;
-  animation: border-fun 0.5s forwards;
 }
 
-@-webkit-keyframes border-fun {
-    to {
-        border: 5px dotted #e9d3d3; /* Dotted border */
-    }
-}
-
-@keyframes border-fun {
-    to {
-        border: 5px dotted #e9d3d3; /* Dotted border *//
-    }
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
 
 .elementToFadeInAndOut {
     -webkit-animation: fadeout 7s linear forwards;
@@ -109,18 +92,18 @@ to { opacity: 0; }
 
 
 .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
 
   h1 {
     font-size: 3.5vh;
     font-family:  'Cedarville Cursive', serif;
-    color: #af1c1c;
+    color: #e46a52;
     outline: none;
     text-align: center;
     -webkit-animation: fadein 2s linear forwards;
@@ -130,10 +113,12 @@ to { opacity: 0; }
     line-height: 1;
   }
   
-  h1:hover {
-    font-variation-settings: "wght" 582; 
-    letter-spacing: 1px;
+
+  @media screen and (max-width:600px) {
+  h1{
+    font-size:2vh
   }
+}
   
   p {
     -webkit-animation: fadein 2s linear forwards;
@@ -143,47 +128,42 @@ to { opacity: 0; }
     font-family: 'Inconsolata', monospace;
     font-size: 2vh;
     text-align: center;
-    color: #e9d3d3;
-    line-height: 2;
+    color: #e29585;
+    line-height: 2.5;
     margin-top: 0 ;
     margin-bottom: 0 ;
   }
 
   #p1 {
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
   #p2 {
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
   }
   #p3 {
-    animation-delay: 4s;
+    animation-delay: 3s;
   }
   #p4 {
-    animation-delay: 4.5s;
+    animation-delay: 3.5s;
   }
   #p5 {
-    animation-delay: 5.5s;
+    animation-delay: 4.5s;
   }
   #p6 {
-    animation-delay: 6s;
+    animation-delay: 5s;
   }
 
   h2 {
     font-size: 3vh;
     font-family:  'Cedarville Cursive', serif;
-    color: #af1c1c;
+    color: #e46a52;
     outline: none;
     text-align: center;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
-    animation-delay: 6.5s;
+    animation-delay: 5.5s;
     opacity: 0;
-    line-height: 1;
-  }
-
-  h2:hover {
-    font-variation-settings: "wght" 582; 
-    letter-spacing: 1px;
+    line-height: 2;
   }
 
   #side {
@@ -192,11 +172,11 @@ to { opacity: 0; }
     padding-bottom:20;
     flex-basis: 49.5%;
     font-family:  'Cedarville Cursive', serif;
-    color: #af1c1c;
+    color: #e46a52;
     outline: none;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
-    animation-delay: 5s;
+    animation-delay: 4s;
     opacity: 0;
     line-height: 1;
     text-transform: none;
