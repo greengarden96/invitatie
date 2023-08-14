@@ -33,7 +33,11 @@
       function scrollWin() {
         window.scrollTo(0, 1000);
       }
-      window.onload=setTimeout(scrollWin,5000);
+      function load(){
+        window.scrollTo(0, 0);
+        setTimeout(scrollWin,5000);
+      }
+      window.onload=load
       </script>
       <style>
         * {
