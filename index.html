@@ -25,8 +25,8 @@
           <p id="p7">vă așteptăm pe:</p>
           <p id="names">1 septembrie 2024</p>
           <div style="display: flex; justify-content: space-between;">
-            <p id="side2">Ceremonia religioasă se va organiza în cadrul Bisericii Sfinții Apostoli Petru și Pavel, Vrănești la ora 13:00.</p>
-            <p id="side2">Petrecerea dedicată mie va avea loc la Vila Blanca începând cu ora 14:00.</p>
+            <p id="side2">Ceremonia religioasă se va organiza în cadrul <span style="color:#b37fde">Bisericii Sfinții Apostoli Petru și Pavel</span>, Vrănești la ora 13:00.</p>
+            <p id="side2">Petrecerea dedicată mie va avea loc la <span style="color:#b37fde">Vila Blanca</span>, Vrănești începând cu ora 14:00.</p>
           </div>
           <p id="">Vă rugăm să confirmați prezența pana pe 15 August la 0760505618/0743457944</p>
     </div>
@@ -41,47 +41,49 @@ html {
 
 body {
   margin: 0;
-  background-color: #adc6da
+  background-color: #ffffff
 }
 
 h1{
-    font-size: 15vh;
+    font-size: 6em;
     font-family:  'Cedarville Cursive', serif;
-    color: #EF8670;
+    color: #a1b1a0;
     outline: none;
     text-align: center;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
     opacity: 0;
-    line-height: 1;
     letter-spacing: -1px;
     text-transform: none;
-    margin: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    line-height:1;
+    text-shadow: 1px 1px 2px white;
 }
 
 a {
     font-family: 'Inconsolata', monospace;
     font-size: 2vh;
-    color: #e46a52;
+    color: #8576FF;
 }
 a:hover{
-  color: #EF8670;
+  color: #1C1678;
 }
 
 .invite-text{
-  border: mintcream 2vh solid;
   padding:25;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   display: flex;
-  width: 56vh;
+  width: 500px;
+  height:1200px;
   margin: 0 auto; /* Center the coupon */
 
-  background-image: url("img2.jpeg");
+  background-image: url("img.jpeg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: 500px;
 }
 
 
@@ -124,25 +126,41 @@ to { opacity: 0; }
   }
   
 
-  @media screen and (max-width:600px) {
-  #title{
-    font-size:2.5vh
-  }
-}
+
   
   p {
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
     /* text-transform: uppercase; */
     opacity: 0;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.7vh;
+    font-family:  'Inconsolata', serif;
+    font-size: 2.em;
     text-align: center;
-    color: #e29585;
-    line-height: 2;
+    color: #96c7a9;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    line-height: 1.3;
     margin-top: 0 ;
     margin-bottom: 0 ;
+    letter-spacing: -1px;
+    -webkit-text-stroke: width color;
+    font-weight: bold;
   }
+  
+  #p1 {
+    color: #91c07f;
+  }
+  #p2 {
+    color: #b37fde;
+  }
+  #p3 {
+    color: #7c91d2;
+  }
+  #p4 {
+    color: #2c95bf;
+  }
+
+
+
 
 
   #names {
@@ -150,7 +168,7 @@ to { opacity: 0; }
     padding-bottom:20;
     font-size: 3vh;
     font-family:  'Cedarville Cursive', serif;
-    color: #e46a52;
+    color: #8576FF;
     outline: none;
     text-align: center;
     -webkit-animation: fadein 2s linear forwards;
@@ -159,6 +177,7 @@ to { opacity: 0; }
     line-height: 1;
     text-transform: none;
     letter-spacing: -1px;
+    text-shadow: 1px 1px 2px white;
   }
 
   #side {
@@ -166,7 +185,7 @@ to { opacity: 0; }
     padding:20;
     flex-basis: 49.5%;
     font-family:  'Cedarville Cursive', serif;
-    color: #e46a52;
+    color: #8576FF;
     outline: none;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
@@ -175,23 +194,25 @@ to { opacity: 0; }
     line-height: 1;
     text-transform: none;
     letter-spacing: -1px;
+    text-shadow: 1px 1px 2px white;
   }
 
   
   #side2 {
-    font-size: 1.7vh;
+    font-size: 2vh;
     padding:5;
     flex-basis: 49.5%;
     font-family: 'Inconsolata', monospace;
-    color: #e46a52;
+    color: #5cabe8;
     outline: none;
     -webkit-animation: fadein 2s linear forwards;
     animation: fadein 2s linear forwards;
     /* animation-delay: 7s; */
     opacity: 0;
-    line-height: 1;
+    line-height: 1.5;
     text-transform: none;
-    letter-spacing: 2px;
+    margin-bottom:10;
+    text-shadow: 1px 1px 2px white;
   }
 
 @-webkit-keyframes fadein {
