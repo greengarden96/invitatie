@@ -12,6 +12,23 @@
 </head>
 <body>
           <div class="invite-text">
+          <p id="p1">Domnul a spus că bucuria mai mare a vieții</p>
+          <p id="p2">vine din împărtășirea fericirii cu cei dragi.</p>
+          <p id="p3">Prin urmare, cu emoție în suflete, </p>
+          <p id="p4">vă solicităm prezența la ceremonia mea de botez.</p>
+          <h1>Daniel</h1>
+          <p id="p4">alături de părinții si nașii</p>
+          <div style="display: flex; justify-content: space-between;">
+            <p id="side">Laurențiu și Tina</p>
+            <p id="side">Cornel și Ramona</p>
+          </div>
+          <p id="p7">vă așteptăm pe:</p>
+          <p id="names">1 septembrie 2024</p>
+          <div style="display: flex; justify-content: space-between;">
+            <p id="side2">Ceremonia religioasă se va organiza în cadrul Bisericii Sfinții Apostoli Petru și Pavel, Vrănești la ora 13:00.</p>
+            <p id="side2">Petrecerea dedicată mie va avea loc la Vila Blanca începând cu ora 14:00.</p>
+          </div>
+          <p id="">Vă rugăm să confirmați prezența pana pe 15 August la 0760505618/0743457944</p>
     </div>
       <style>
         * {
@@ -24,24 +41,168 @@ html {
 
 body {
   margin: 0;
-  background-color: #F5F1F2;
+  background-color: #adc6da
 }
 
+h1{
+    font-size: 15vh;
+    font-family:  'Cedarville Cursive', serif;
+    color: #EF8670;
+    outline: none;
+    text-align: center;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    opacity: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: none;
+    margin: 5vh;
+}
+
+a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2vh;
+    color: #e46a52;
+}
+a:hover{
+  color: #EF8670;
+}
 
 .invite-text{
+  border: mintcream 2vh solid;
+  padding:25;
+  flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 56vh;
   margin: 0 auto; /* Center the coupon */
 
-  background-image: url("bg.jpeg");
+  background-image: url("img2.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: contain;
 }
 
+
+@media only screen and (max-width: 500px) {
+  .invite-text{
+    width: 100%;
+  }
+}
+
+
+.elementToFadeInAndOut {
+    -webkit-animation: fadeout 7s linear forwards;
+    animation: fadeout 4s linear forwards;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes fadeout {
+from { opacity: 1; }
+to { opacity: 0; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  @media screen and (max-width:600px) {
+  #title{
+    font-size:2.5vh
+  }
+}
+  
+  p {
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    /* text-transform: uppercase; */
+    opacity: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.7vh;
+    text-align: center;
+    color: #e29585;
+    line-height: 2;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+  }
+
+
+  #names {
+    padding-top:20;
+    padding-bottom:20;
+    font-size: 3vh;
+    font-family:  'Cedarville Cursive', serif;
+    color: #e46a52;
+    outline: none;
+    text-align: center;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    opacity: 0;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: -1px;
+  }
+
+  #side {
+    font-size: 2.5vh;
+    padding:20;
+    flex-basis: 49.5%;
+    font-family:  'Cedarville Cursive', serif;
+    color: #e46a52;
+    outline: none;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    /* animation-delay: 7s; */
+    opacity: 0;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: -1px;
+  }
+
+  
+  #side2 {
+    font-size: 1.7vh;
+    padding:5;
+    flex-basis: 49.5%;
+    font-family: 'Inconsolata', monospace;
+    color: #e46a52;
+    outline: none;
+    -webkit-animation: fadein 2s linear forwards;
+    animation: fadein 2s linear forwards;
+    /* animation-delay: 7s; */
+    opacity: 0;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: 2px;
+  }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    
+    @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
       </style>
     
 </body>
